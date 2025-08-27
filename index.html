@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Robbie Lens Photographie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header class="haut-pages">
+
+        <!-- contenue de la navbar -->
+        <nav>
+
+            <!-- lien logo robbie lens -->
+            <a href="">
+                <img src="./Images/logo.png" alt="logo de robbie lens" class="logo">
+            </a>
+
+            <!-- Container des liens de navigation -->
+            <div>
+                <!-- lien D'acces a la partie Acceuil -->
+                <a href="index.html" class="Robbie-links">Acceuil</a>
+                <!-- Lien vers la page d'accueil (mal  nommé, devrait être index.html) -->
+ 
+                <!-- lien D'acces a la partie A propos  -->
+                <a href="./Dossier-Demo/a-propos.html" class="Robbie-links">À propos</a>
+                <!-- Lien vers la page "À propos" (même que le lien précédent) -->
+
+                <a href="portfolio.html" class="Robbie-links">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- container du main -->
+    <main>
+        <!-- Contenu principal de la page -->
+
+        <section class="section-robbie">
+
+            <div>
+                <!-- titre de niveaux 1-->
+                <h1 class="one">Styve Developeur Web</h1>
+                
+                <!-- Paragraphe avec certains mots mis en emphase -->
+                <p class="two">
+                    Où <span class="important">professionalisme</span> s’allie avec <span class="important">passion</span>. Depuis plus de 3 ans maintenant,
+                    j’exerce mon métier avec la passion qui m’anime : Developer des Application web utilise au monde.<br>
+                    Programmer c'est ca ma passion
+                </p>
+            
+                <!-- New lien color -->
+                    <a href="#contact" class="cta">Un Projet? Écrivez-Moi</a>
+                    <!-- Lien vers une éventuelle page de contact ou formulaire (href vide ici) -->
+            </div>
+
+            <!-- Image représentant Robbie Lens -->
+            <img src="./Images/tew.jpg" alt="image de robbie lens" class="four" style="height: 400px; width: 800px;">
+        </section>
+
+        <!-- section images -->
+        <section class="section-robbie_photo">
+
+            <h2>Mes Precedents projet</h2>
+            <!-- Titre de niveau 2 pour cette section -->
+
+            <div>
+                <a href="file:///F:/Users/MC----METISE-NOIR/Desktop/E-commerce/index.html"><img src="images/accueil/projet1.PNG" style="width: 400px; height: 250px;" alt="Twelve apostles - Australie"></a>
+                <a href="file:///F:/Users/MC----METISE-NOIR/Documents/Projet/STAGE/index.html"><img src="images/accueil/projet2.PNG" style="width: 400px; height: 250px;" alt="Wai-O-Tapu - Nouvelle-Zélande"></a>
+                <a href="file:///F:/Users/MC----METISE-NOIR/Desktop/coding/Mon%20SITE%20Front-end/Food-website-Design-using-html-css-main/index.html"><img src="images/accueil/projet6.PNG" style="width: 400px; height: 250px;" alt="Parc National d’Abel Tasman - Nouvelle-Zélande"></a>
+                <!-- Première ligne de 3 images de projet -->
+            </div>
+
+            <div>
+                <a href="file:///F:/Users/MC----METISE-NOIR/Documents/Projet/resto/Admin/Login%20Admin.html"><img src="images/accueil/projet8.PNG" style="width: 400px; height: 250px; object-fit: cover;" alt="Lac Rotorua - Nouvelle-Zélande"></a>
+                <a href="images/accueil/projet9.PNG"><img src="images/accueil/projet9.PNG" style="width: 400px; height: 250px;" alt="Milford Sound - Nouvelle-Zélande"></a>
+                <a href="file:///F:/Users/MC----METISE-NOIR/Desktop/coding/calculator/index.html"><img src="images/accueil/projet3.PNG" style="width: 400px; height: 250px; object-fit: cover;" alt="Lac Wanaka - Nouvelle-Zélande"></a>
+                <!-- Deuxième ligne de 3 images de projet -->
+            </div>
+        </section>  
+        <section class="section-contact" id="contact">
+            <h2 class="titre-contact">Parlons de votre projet</h2>
+            <form class="formulaire-contact" method="get" action="#">
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">nom</label>
+                        <input type="text" name="nom" id="nom" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <label for="message">message</label>
+                <textarea name="message" id="message" rows="10" required></textarea>
+                <input type="submit" value="ENVOYER" class="cta">
+            </form>
+        </section>
+    </main>
+
+    <!-- container du footer -->
+    <footer class="bas-pages">
+        <!-- Pied de page contenant le logo et les réseaux sociaux -->
+
+        <!-- lien logo robbie lens -->
+        <a href="./index.html">
+            <img src="./Images/logo.png" alt="logo de robbie lens" class="logo">
+            <!-- Logo qui ramène vers la page d'accueil -->
+        </a>
+
+        <div>
+            <!-- lien twitter -->
+            <a target="_blank" href="https://x.com/" class="Robbie-links logo">
+                <img src="./Images/twitter.png" alt="">
+                <!-- Icône de Twitter, s’ouvre dans un nouvel onglet -->
+            </a>
+
+            <!-- lien instagram -->
+            <a target="_blank" href="https://www.instagram.com/" class="Robbie-links logo">
+                <img src="./Images/instagram.png" alt="">
+                <!-- Icône d’Instagram, s’ouvre dans un nouvel onglet -->
+            </a>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>
+

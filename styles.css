@@ -1,0 +1,376 @@
+/* import police */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reinitialise la marge par defaut du navigateur */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
+}
+
+/* couleur black a tout les lien */
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Manrope';
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+/* survol des liens */
+a:hover {
+  text-decoration: underline;
+}
+
+/* couleur #a5b4fc span du paragraphe */
+.important {
+  color: #a5b4fc;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #A5B4FC;
+    font-family: 'Montserrat';
+}
+
+p,
+li {
+    font-size: 1.1em;
+    font-family: 'Manrope';
+}
+
+header, footer {
+  padding: 0px 50px;
+  background: #fff; 
+}
+
+.haut-pages, .bas-pages a {
+  color: #242424;
+}
+
+p, li, h2 {
+  color: #F9F8FF;
+}
+
+/* lien d'invite */
+.cta {
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 50px;
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  font-family: 'Manrope';
+  border: none;
+}
+
+/* survol des lien d'invite */
+.cta:hover {
+  background: linear-gradient(#696484, #8788BA);
+  text-decoration: none;
+}
+
+/* carre-contenu */
+.carre-contenu {
+  padding: 50px;
+  border-right: 1px solid #8e86b5;
+  border-bottom: 1px solid #8e86b5;
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 80px; 
+}
+
+/* marge haute des h2 */
+.carre-contenu h2 {
+  margin-top: 30px;
+}
+
+/* marge haute des ul */
+.carre-contenu ul {
+  margin-top: 30px;
+}
+
+/* contenue section */
+section {
+  padding: 80px;
+}
+/* section A propos */
+
+footer,
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Robbie-links {
+  margin-left: 30px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+  color: #8e86b5;
+}
+
+.section-robbie {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: auto;
+  /* gap: 100px; */
+}
+
+.section-robbie h1 {
+  margin-bottom: 15px;
+}
+
+.section-robbie p {
+  margin-bottom: 30px;
+}
+
+.section-robbie div {
+  padding-right: 80px;
+}
+
+.section-robbie_photo {
+  background-color: white;
+  padding: 80px;
+}
+
+.section-robbie_photo h2 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-robbie_photo div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.portfolio-photos {
+  background-color: white;
+}
+
+.portfolio-photos h2 {
+  color: #242424;
+  margin-top: 100px;
+}
+
+.paysages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 15px;
+}
+
+.portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+
+.paysages img, .portraits img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lien-photo {
+  position: relative;
+}
+
+.survol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 70%);
+  display: none;
+  font-size: 1.5em;
+}
+
+.lien-photo:hover .survol {
+  display: flex;
+}
+
+.a-propos-main {
+  margin: auto;
+}
+
+table {
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 15px;
+  border: 1px solid #a5b4fc;
+}
+
+td {
+  padding: 80px;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+.carre-contenu + div {
+  text-align: center;
+}
+
+.titre-principal,
+.tarifs {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.titre-contact {
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav img {
+    margin-bottom: 20px;
+  }
+
+  header,
+  footer {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .section-tarifs {
+    display: none;
+  }
+
+  .section-robbie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-robbie div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .section-robbie img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .section-robbie_photo {
+    padding: 20px;
+  }
+
+  .section-robbie_photo div {
+    flex-direction: column;
+  }
+
+  .section-contact {
+    padding: 50px 20px;
+  }
+
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .paysages {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .portraits {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .carre-contenu {
+    padding: 20px;
+  }
+}
